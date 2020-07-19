@@ -23,7 +23,7 @@ public class BillController {
 	}
 	
 	@PostMapping("/billCalculate")
-	public ModelAndView calculateDiff(@RequestBody BillDetails bill) throws Exception{
+	public ModelAndView calculateDiff(BillDetails bill) throws Exception{
 		if(null==bill) {
 			throw new Exception();
 		}

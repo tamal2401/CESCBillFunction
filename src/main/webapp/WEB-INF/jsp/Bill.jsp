@@ -11,7 +11,7 @@
 <div class="container">
 <div class="col-md-12">
 <h2 style="background-color:dodgerblue"> Please Enter the following details </h2>
-<form action="billCalculate">
+<form action="billCalculate" method = "POST">
 
 <div class="form-group">
 <label for= "name" >Name </label>
