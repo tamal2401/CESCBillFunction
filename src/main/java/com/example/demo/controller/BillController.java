@@ -18,11 +18,12 @@ public class BillController {
 	BillCalculation billCal;
 	@GetMapping("/")
 	public String getBillInfo() {
+		System.out.println("returning the Bill view");
 		return "Bill";
 	}
 	
 	@PostMapping("/billCalculate")
-	public ModelAndView calculateDiff( BillDetails bill) throws Exception{
+	public ModelAndView calculateDiff(@RequestBody BillDetails bill) throws Exception{
 		if(null==bill) {
 			throw new Exception();
 		}
